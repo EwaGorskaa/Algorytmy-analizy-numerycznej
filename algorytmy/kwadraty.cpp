@@ -70,11 +70,11 @@ a1 = Wa1/W;
 
 cout << "funkcja aproksymacyjna ma postac: ";
 
-if(wybor == 1) cout << "g(x) = " << a1 << "x + " << a0;
-else if(wybor == 2) cout << "g(x) = " << a1 <<"*1/x + " << a0;
-else cout << "g(x) = e^" << a1 << "x + e^" << a0;
+if(wybor == 1) cout << "g(x) = " << a1 << "x + " << a0 << endl;
+else if(wybor == 2) cout << "g(x) = " << a1 <<"*1/x + " << a0 << endl;
+else cout << "g(x) = e^" << a1 << "x + e^" << a0 << endl;
 
-cout << endl;
+
 //NIEPEWNOSCI TYPU A I B:
 double ua, ub;
 
