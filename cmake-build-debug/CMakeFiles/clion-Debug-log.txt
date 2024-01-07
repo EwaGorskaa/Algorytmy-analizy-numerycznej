@@ -1,0 +1,1 @@
+CMakeLists.txt not found in C:\Users\48518\Desktop\Algorytmy analizy numerycznej Select CMakeLists.txt
