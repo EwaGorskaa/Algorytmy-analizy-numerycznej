@@ -74,16 +74,21 @@ if(wybor == 1) cout << "g(x) = " << a1 << "x + " << a0 << endl;
 else if(wybor == 2) cout << "g(x) = " << a1 <<"*1/x + " << a0 << endl;
 else cout << "g(x) = e^" << a1 << "x + e^" << a0 << endl;
 
-
 //NIEPEWNOSCI TYPU A I B:
 double ua, ub;
 
 double y2;
-for(int i = 0; i < wezly.size();i++){
+for(int i = 0; i < wezly.size(); i++){
     y2 += pow(wartosci[i], 2);
 }
 
-ua = sqrt((wezly.size()/(wezly.size()-2))*((y2 - a1*ur[5] - a0*ur[2])/(wezly.size()*ur[4] - pow(ur[1], 2))));
+double rob, l, m;
+rob = wezly.size()/(wezly.size() - 2.0);
+l = y2 - (a1*ur[5]) - a0*ur[2];
+double x2 = pow(ur[1], 2);
+m = (wezly.size()*ur[4]) - x2;
+
+ua = sqrt(rob*l/m);
 ub = ua * sqrt(ur[4]/wezly.size());
 
 cout << "niepewnosc typu a wynosi: " << ua << endl;
