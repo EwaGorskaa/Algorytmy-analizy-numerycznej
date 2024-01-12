@@ -79,6 +79,7 @@ void gauss(){
     }
 
     rozwiazanie[rozmiar - 1] = macierz[rozmiar - 1][rozmiar];
+    rozwiazanie[rozmiar - 1] /= macierz[rozmiar - 1][rozmiar - 1];
     for(int i = rozmiar - 2; i >= 0; i--){
         rozwiazanie[i] = macierz[i][rozmiar];  
         for(int j = rozmiar - 2; j >= i; j--){
